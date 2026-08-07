@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:text="@string/app_tagline" />
+
+    <TextView
+        android:id="@+id/tvConnStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_dim"
+        android:layout_marginTop="4dp"
+        android:text="Menghubungkan..." />
+
+    <!-- Power / Home / Back row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <ImageButton android:id="@+id/btnBack" style="@style/RemoteIconButton" android:contentDescription="Back" android:src="@android:drawable/ic_media_rew" />
+        <ImageButton android:id="@+id/btnHome" style="@style/RemoteIconButton" android:contentDescription="Home" android:src="@android:drawable/ic_menu_myplaces" />
+        <ImageButton android:id="@+id/btnPower" style="@style/RemoteIconButton" android:contentDescription="Power" android:src="@android:drawable/ic_lock_power_off" />
+    </LinearLayout>
+
+    <!-- D-Pad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <ImageButton android:id="@+id/btnUp" style="@style/RemoteDpadButton" android:src="@android:drawable/arrow_up_float" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton android:id="@+id/btnLeft" style="@style/RemoteDpadButton" android:src="@drawable/ic_arrow_left" />
+            <Button android:id="@+id/btnOk" style="@style/RemoteOkButton" android:text="OK" />
+            <ImageButton android:id="@+id/btnRight" style="@style/RemoteDpadButton" android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/btnDown" style="@style/RemoteDpadButton" android:src="@android:drawable/arrow_down_float" />
+    </LinearLayout>
+
+    <!-- Volume / Mute -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <ImageButton android:id="@+id/btnVolDown" style="@style/RemoteIconButton" android:contentDescription="Vol-" android:src="@android:drawable/ic_media_previous" />
+        <ImageButton android:id="@+id/btnMute" style="@style/RemoteIconButton" android:contentDescription="Mute" android:src="@android:drawable/ic_lock_silent_mode" />
+        <ImageButton android:id="@+id/btnVolUp" style="@style/RemoteIconButton" android:contentDescription="Vol+" android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+    <!-- Media controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <ImageButton android:id="@+id/btnRewind" style="@style/RemoteIconButton" android:contentDescription="Rewind" android:src="@android:drawable/ic_media_rew" />
+        <ImageButton android:id="@+id/btnPlayPause" style="@style/RemoteIconButton" android:contentDescription="Play/Pause" android:src="@android:drawable/ic_media_play" />
+        <ImageButton android:id="@+id/btnForward" style="@style/RemoteIconButton" android:contentDescription="Forward" android:src="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <!-- Menu / Settings -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button android:id="@+id/btnSource" style="@style/RemoteTextButton" android:text="Input" />
+        <Button android:id="@+id/btnSettings" style="@style/RemoteTextButton" android:text="Setelan" />
+    </LinearLayout>
+
+</LinearLayout>

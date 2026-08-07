@@ -1,0 +1,35 @@
+<resources>
+    <style name="RemoteIconButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:background">@drawable/bg_round_button</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:tint">@color/text_light</item>
+    </style>
+
+    <style name="RemoteDpadButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/bg_round_button</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:tint">@color/text_light</item>
+    </style>
+
+    <style name="RemoteOkButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/bg_round_button_accent</item>
+        <item name="android:textColor">@color/bg_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RemoteTextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:minWidth">120dp</item>
+    </style>
+</resources>
